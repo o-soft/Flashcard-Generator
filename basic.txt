@@ -1,0 +1,26 @@
+[
+	{
+		"front": "Who is Batman?",
+		"back": "Bruce Wayne"
+	},
+	{
+		"front": "Who is Batman's side kick?",
+		"back": "Robin"
+	},
+	{
+		"front": "Who is Batman's nemesis",
+		"back": "The Joker"
+	},
+	{
+		"front": "Who is the female version of Batman?",
+		"back": "Batgirl"
+	},
+	{
+		"front": "Who is Bruce Wayne's esteemed butler?",
+		"back": "Alfred"
+	},
+	{
+		"front": "What vehichle does Batman drive?",
+		"back": "Batmobile"
+	}
+]

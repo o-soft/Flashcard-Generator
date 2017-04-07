@@ -1,0 +1,25 @@
+[
+	{
+		"text": "(Bruce Wayne) is Batman",
+		"cloze": "Bruce Wayne"
+	},
+	{
+		"text": "(Robin), is Batman's side kick.",
+		"cloze": "Robin"
+	},
+	{
+		"text": "(The Joker) is Batman's nemesis.",
+		"cloze": "The Joker"
+	},
+	{
+		"text": "(Batgirl) is the female version of Batman.",
+		"cloze": "Tarts"
+	},
+	{
+		"text": "(Alfred), is Bruce Wayne's esteemed butler",
+		"cloze": "Alfred"
+	},
+	{
+		"text": "The (Batmobile) is Batman's vehichle"
+	}
+]

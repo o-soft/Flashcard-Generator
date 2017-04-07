@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-app",
+  "version": "1.0.0",
+  "description": "An application that generates two types of flash cards (Cloze Card aand Basic Card).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o-soft/Flashcard-Generator.git"
+  },
+  "keywords": [
+    "cloze"
+  ],
+  "author": "Oscar Luna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o-soft/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/o-soft/Flashcard-Generator#readme"
+}
