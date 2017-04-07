@@ -6,15 +6,7 @@ const fs = require(fs);
 
 
 
-
-
-// creates the printInfo method and applies it to all programmer objects
-Programmer.prototype.showCard = function() {
-  console.log("Front " + this.front+ "\nBack: " + this.back;
-  console.log("---------------");
-};
-
-const flashcardGenerator = function() {
+const flashCardGenerator = function() {
 
     // runs inquirer and asks the user a series of questions whose replies are
     // stored within the variable answers inside of the .then statement
@@ -28,15 +20,32 @@ const flashcardGenerator = function() {
     ]).then(function(option) {
    		
     	if (option.card === 'basic-cards') {
-    		displayCards(basic.txt);
+    		readMyCards(basic.txt);
     		configureCards();
     	}
 
     	else if (option.card === 'cloze-cards') {
-    		displayCards(cloze.txt);
+    		readMyCards(cloze.txt);
     		configureCards();
     	}
 
+    	// else if (option.card != ('basic-cards' || 'cloze-cards') {
+    	// 	console.log('Error, please select a different card option.')
+    	// }
 
 
     });
+}
+
+const readMyCards = function(file) {
+	 fs.readFile(file, "utf8", function(error, data){
+	 	var flashCardArray = [];
+	 	if (!error) {
+	 		console.log(data);
+	 		var jsonData = JSON.parse(data);
+	 		for (var i = 0; i < jsonData.length; i++) {
+	 			flashCardArray.push(jsonData[i]);
+	 		}
+	 	}
+
+}
