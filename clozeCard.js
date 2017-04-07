@@ -1,8 +1,8 @@
 
 
 const ClozeCard = function(text, cloze) {
-	this.text,
-	this.cloze,
+	this.text = text;
+	this.cloze = cloze;
 }
 
 ClozeCard.prototype.printClozeCard = function() {

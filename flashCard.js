@@ -1,8 +1,8 @@
 
 
 const FlashCard = function(front, back) {
-	this.front,
-	this.back,
+	this.front = front;
+	this.back = back;
 }
 
 FlashCard.prototype.printFlashCard = function() {
@@ -17,7 +17,7 @@ FlashCard.prototype.printCardFront = function() {
 
 FlashCard.prototype.printCardBack = function() {
 	return this.back,
-	console.log('Back of Card:' + this.back);
+	console.log('Front of Card:' + this.back);
 };
 
 module.exports = FlashCard;

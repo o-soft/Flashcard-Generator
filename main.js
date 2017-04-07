@@ -2,7 +2,7 @@
 const theCloze = require("./clozeCard.js");
 const theFlashCard = require("./flashCard.js");
 const inquirer = require("inquirer");
-const fs = require(fs);
+const fs = require('fs');
 
 
 
@@ -47,5 +47,5 @@ const readMyCards = function(file) {
 	 			flashCardArray.push(jsonData[i]);
 	 		}
 	 	}
-
+    })
 }
