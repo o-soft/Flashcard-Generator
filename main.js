@@ -44,7 +44,7 @@ const flashCardGenerator = function () {
     }
 };
 
-
+flashCardGenerator();
 
 // const readMyCards = function(file) {
 // 	 fs.readFile(file, "utf8", function(error, data){
