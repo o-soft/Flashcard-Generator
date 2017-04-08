@@ -1,0 +1,13 @@
+[
+
+	{
+	  front: "abc," 
+	  back: "xyz",
+	},
+
+	{
+	  text: "abc," 
+	  cloze: "xyz",
+	},
+
+]

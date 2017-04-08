@@ -1,23 +1,33 @@
 
 
-const FlashCard = function(front, back) {
+const FlashCardConst = function(front, back) {
 	this.front = front;
 	this.back = back;
-}
+	this.saveCard = function {
+		fs.appendFile("flashCards.txt", "{Front of Card:' + this.front + ' | ' + this.back'},", function(err){
+			if (err) {
+				console.log("ERROR");
+			};
+			else {
+				printFlashCard();
+			};
+		});
+	};
+};
 
-FlashCard.prototype.printFlashCard = function() {
-	return FlashCard,
+FlashCardConst.prototype.printFlashCard = function() {
+	return FlashCardConst,
 	console.log('Front of Card:' + this.front + ' | ' + this.back);
 };
 
-FlashCard.prototype.printCardFront = function() {
-	return this.front,
-	console.log('Front of Card:' + this.front);
-};
+// FlashCardConst.prototype.printCardFront = function() {
+// 	return this.front,
+// 	console.log('Front of Card:' + this.front);
+// };
 
-FlashCard.prototype.printCardBack = function() {
-	return this.back,
-	console.log('Front of Card:' + this.back);
-};
+// FlashCardConst.prototype.printCardBack = function() {
+// 	return this.back,
+// 	console.log('Front of Card:' + this.back);
+// };
 
-module.exports = FlashCard;
+module.exports = FlashCardConst;
